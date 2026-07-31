@@ -15,9 +15,6 @@ Este repositorio contiene la arquitectura y especificaciones técnicas para el *
    - `META_APP_SECRET`: Secret de tu App en Meta for Developers.
    - `META_PHONE_NUMBER_ID`: ID de número en Meta.
    - `META_ACCESS_TOKEN`: Token de acceso permanente de Meta WhatsApp API.
-   - `GOOGLE_CLIENT_EMAIL`: Email del Service Account de Google Cloud.
-   - `GOOGLE_PRIVATE_KEY`: Clave privada RSA del Service Account.
-   - `GOOGLE_DRIVE_ROOT_FOLDER_ID`: ID de la carpeta raíz compartida en Google Drive.
 
 ---
 
@@ -35,5 +32,7 @@ Este repositorio contiene la arquitectura y especificaciones técnicas para el *
 | 📄 [08-integracion-whatsapp-meta.md](08-integracion-whatsapp-meta.md) | Webhook en Next.js App Router (`src/app/api/webhook/route.ts`), validación HMAC y mensajes interactivos. |
 | 📄 [09-estrategia-ocr-extraccion.md](09-estrategia-ocr-extraccion.md) | Extractor OCR en Python (`pdfplumber` + `EasyOCR` + `pyzbar` + `regex`) para cotizaciones y comprobantes. |
 | 📄 [10-integracion-google-drive.md](10-integracion-google-drive.md) | Servicio de Google Drive API v3 en Node.js (`googleapis` npm) con Service Account. |
+| 📄 [11-alternativas-almacenamiento.md](11-alternativas-almacenamiento.md) | Comparativa de opciones de almacenamiento: **Supabase Storage** (Recomendada), Cloudflare R2, AWS S3, Cloudinary y OneDrive. |
+| 📄 [12-analisis-costos-almacenamiento-e-ia.md](12-analisis-costos-almacenamiento-e-ia.md) | **Análisis exhaustivo de costos, pros/contras y complejidad de Storage e IA (Gemini vs GPT-4o vs Modelos Locales GPU).** |
 | 🗄️ [schema.sql](schema.sql) | Script ejecutable SQL DDL para creación de la base de datos en Supabase / PostgreSQL. |
 | 📦 [package.json](package.json) | Configuración de paquetes y dependencias de Next.js / Node.js. |
